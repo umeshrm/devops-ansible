@@ -1,0 +1,10 @@
+---
+# tasks file for installjava
+#
+#---
+#tasks file for roles/installjava
+#
+- name: Install openjdk-8-jdk
+  yum:
+    name: java-1.8.0-openjdk
+    state: present

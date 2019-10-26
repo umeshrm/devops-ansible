@@ -1,0 +1,24 @@
+---
+  - hosts: localhost::dbservers::appservers
+    user: root
+    #serial: 1
+    tasks:
+     - name: installing httpd package
+       yum:
+         pkg: httpd
+         state: latest
+       when: ansible_os_family == 'RedHat'
+       ignore_errors: true
+   
+     - name: copying index.html file
+       copy: src=index.html dest=/var/www/html/index.html
+
+     - name: service starting
+       service: name=httpd state=started
+
+     - name: installing httpd package in Debian servers
+       apt:
+           pkg: httpd
+           state: latest
+       when: ansible_os_family == 'Debian'
+       ignore_errors: true

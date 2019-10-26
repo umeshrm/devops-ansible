@@ -1,0 +1,5 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+10.128.0.6 umeshcontroller1.us-central1-a.c.calcium-alchemy-256712.internal umeshcontroller1  # Added by Google
+10.128.0.5 umeshmanage1.us-central1-a.c.calcium-alchemy-256712.internal umeshmanage1  # Added by Google
+169.254.169.254 metadata.google.internal  # Added by Google

@@ -1,0 +1,731 @@
+2019-10-23 12:38:29,357 p=1682 u=umesh |  ERROR! Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to be in '/home/umesh/playbook.yml': line 6, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+tasks :
+^ here
+
+2019-10-23 12:39:14,222 p=1704 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-23 12:39:14,231 p=1704 u=umesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-10-23 12:39:17,200 p=1704 u=umesh |  fatal: [34.68.17.61]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '34.68.17.61' (ECDSA) to the list of known hosts.\r\nPermission denied (publickey,gssapi-keyex,gssapi-with-mic).", "unreachable": true}
+2019-10-23 12:39:17,201 p=1704 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-23 12:39:17,201 p=1704 u=umesh |  34.68.17.61                : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2019-10-23 12:40:48,356 p=1735 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-23 12:40:48,365 p=1735 u=umesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-10-23 12:40:48,478 p=1735 u=umesh |  fatal: [34.68.17.61]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).", "unreachable": true}
+2019-10-23 12:40:48,479 p=1735 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-23 12:40:48,480 p=1735 u=umesh |  34.68.17.61                : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2019-10-23 12:44:12,690 p=1792 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-23 12:44:12,700 p=1792 u=umesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-10-23 12:44:14,259 p=1792 u=umesh |  ok: [34.68.17.61]
+2019-10-23 12:44:14,278 p=1792 u=umesh |  TASK [Copies files to remote locations] ********************************************************************************************************************************
+2019-10-23 12:44:14,363 p=1792 u=umesh |  An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2019-10-23 12:44:14,363 p=1792 u=umesh |  fatal: [34.68.17.61]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/umesh/test.txt' on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2019-10-23 12:44:14,364 p=1792 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-23 12:44:14,364 p=1792 u=umesh |  34.68.17.61                : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-10-23 12:46:24,679 p=1851 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-23 12:46:24,688 p=1851 u=umesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-10-23 12:46:26,119 p=1851 u=umesh |  ok: [34.68.17.61]
+2019-10-23 12:46:26,137 p=1851 u=umesh |  TASK [Copies files to remote locations] ********************************************************************************************************************************
+2019-10-23 12:46:27,408 p=1851 u=umesh |  changed: [34.68.17.61]
+2019-10-23 12:46:27,410 p=1851 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-23 12:46:27,411 p=1851 u=umesh |  34.68.17.61                : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-10-23 12:47:09,212 p=1896 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-23 12:47:09,222 p=1896 u=umesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-10-23 12:47:10,318 p=1896 u=umesh |  ok: [34.68.17.61]
+2019-10-23 12:47:10,337 p=1896 u=umesh |  TASK [Copies files to remote locations] ********************************************************************************************************************************
+2019-10-23 12:47:11,517 p=1896 u=umesh |  ok: [34.68.17.61]
+2019-10-23 12:47:11,519 p=1896 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-23 12:47:11,520 p=1896 u=umesh |  34.68.17.61                : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-10-23 12:48:29,679 p=1951 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-23 12:48:29,689 p=1951 u=umesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-10-23 12:48:31,121 p=1951 u=umesh |  ok: [34.68.17.61]
+2019-10-23 12:48:31,140 p=1951 u=umesh |  TASK [Copies files to remote locations] ********************************************************************************************************************************
+2019-10-23 12:48:32,413 p=1951 u=umesh |  changed: [34.68.17.61]
+2019-10-23 12:48:32,415 p=1951 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-23 12:48:32,415 p=1951 u=umesh |  34.68.17.61                : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-10-23 12:49:13,833 p=2009 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-23 12:49:13,842 p=2009 u=umesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-10-23 12:49:14,937 p=2009 u=umesh |  ok: [34.68.17.61]
+2019-10-23 12:49:14,956 p=2009 u=umesh |  TASK [Copies files to remote locations] ********************************************************************************************************************************
+2019-10-23 12:49:16,227 p=2009 u=umesh |  changed: [34.68.17.61]
+2019-10-23 12:49:16,229 p=2009 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-23 12:49:16,229 p=2009 u=umesh |  34.68.17.61                : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-10-23 13:06:19,533 p=2327 u=umesh |  34.68.17.61 | CHANGED | rc=0 >>
+              total        used        free      shared  buff/cache   available
+Mem:              3           0           3           0           0           3
+Swap:             0           0           0
+
+2019-10-23 13:38:45,187 p=2938 u=umesh |  PLAY [localhost] *******************************************************************************************************************************************************
+2019-10-23 13:38:45,197 p=2938 u=umesh |  TASK [check the services] **********************************************************************************************************************************************
+2019-10-23 13:38:45,216 p=2938 u=umesh |  fatal: [localhost]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'items' is undefined\n\nThe error appears to be in '/home/umesh/with_items.yml': line 8, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n    - name: check the services\n      ^ here\n"}
+2019-10-23 13:38:45,217 p=2938 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-23 13:38:45,217 p=2938 u=umesh |  localhost                  : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-10-23 13:40:01,654 p=2966 u=umesh |  PLAY [localhost] *******************************************************************************************************************************************************
+2019-10-23 13:40:01,664 p=2966 u=umesh |  TASK [check the services] **********************************************************************************************************************************************
+2019-10-23 13:40:01,684 p=2966 u=umesh |  fatal: [localhost]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'items' is undefined\n\nThe error appears to be in '/home/umesh/with_items.yml': line 8, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n    - name: check the services\n      ^ here\n"}
+2019-10-23 13:40:01,685 p=2966 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-23 13:40:01,685 p=2966 u=umesh |  localhost                  : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-10-23 13:40:40,962 p=2992 u=umesh |  PLAY [localhost] *******************************************************************************************************************************************************
+2019-10-23 13:40:40,971 p=2992 u=umesh |  TASK [check the services] **********************************************************************************************************************************************
+2019-10-23 13:40:42,222 p=2992 u=umesh |  failed: [localhost] (item=httpd) => {"ansible_loop_var": "item", "changed": false, "item": "httpd", "msg": "value of state must be one of: reloaded, restarted, started, stopped, got: absent"}
+2019-10-23 13:40:42,670 p=2992 u=umesh |  failed: [localhost] (item=apr) => {"ansible_loop_var": "item", "changed": false, "item": "apr", "msg": "value of state must be one of: reloaded, restarted, started, stopped, got: absent"}
+2019-10-23 13:40:43,110 p=2992 u=umesh |  failed: [localhost] (item=http-devel) => {"ansible_loop_var": "item", "changed": false, "item": "http-devel", "msg": "value of state must be one of: reloaded, restarted, started, stopped, got: absent"}
+2019-10-23 13:40:43,549 p=2992 u=umesh |  failed: [localhost] (item=apr-util) => {"ansible_loop_var": "item", "changed": false, "item": "apr-util", "msg": "value of state must be one of: reloaded, restarted, started, stopped, got: absent"}
+2019-10-23 13:40:43,551 p=2992 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-23 13:40:43,552 p=2992 u=umesh |  localhost                  : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-10-23 13:41:46,741 p=3150 u=umesh |  PLAY [localhost] *******************************************************************************************************************************************************
+2019-10-23 13:41:46,751 p=3150 u=umesh |  TASK [check the services] **********************************************************************************************************************************************
+2019-10-23 13:41:46,765 p=3150 u=umesh |  [DEPRECATION WARNING]: Invoking "yum" only once while using a loop via squash_actions is deprecated. Instead of using a loop to supply multiple items and specifying 
+`name: "{{ item }}"`, please use `name: ['httpd', 'apr', 'http-devel', 'apr-util']` and remove the loop. This feature will be removed in version 2.11. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2019-10-23 13:41:50,385 p=3150 u=umesh |  ok: [localhost] => (item=[u'httpd', u'apr', u'http-devel', u'apr-util'])
+2019-10-23 13:41:50,391 p=3150 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-23 13:41:50,391 p=3150 u=umesh |  localhost                  : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-10-23 13:43:36,437 p=3237 u=umesh |  PLAY [localhost] *******************************************************************************************************************************************************
+2019-10-23 13:43:36,447 p=3237 u=umesh |  TASK [check the services] **********************************************************************************************************************************************
+2019-10-23 13:43:36,462 p=3237 u=umesh |  [DEPRECATION WARNING]: Invoking "yum" only once while using a loop via squash_actions is deprecated. Instead of using a loop to supply multiple items and specifying 
+`name: "{{ item }}"`, please use `name: ['httpd', 'telnet', 'nmap', 'zip']` and remove the loop. This feature will be removed in version 2.11. Deprecation warnings can
+ be disabled by setting deprecation_warnings=False in ansible.cfg.
+2019-10-23 13:43:37,657 p=3237 u=umesh |  ok: [localhost] => (item=[u'httpd', u'telnet', u'nmap', u'zip'])
+2019-10-23 13:43:37,662 p=3237 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-23 13:43:37,662 p=3237 u=umesh |  localhost                  : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-10-23 13:50:03,763 p=3349 u=umesh |  ERROR! A malformed block was encountered while loading tasks: {u'with_items': [{u'yum': {u'name': u'{{ packages }}'}, u'name': u'ensure a list of packages installed', u'vars': {u'packages': [u'httpd', u'httpd-tools']}}]} should be a list or None but is <class 'ansible.parsing.yaml.objects.AnsibleMapping'>
+
+The error appears to be in '/home/umesh/with_items.yml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- hosts: localhost
+  ^ here
+
+2019-10-23 13:50:46,203 p=3369 u=umesh |  ERROR! A malformed block was encountered while loading tasks: {u'with_items': [{u'yum': {u'name': u'{{ packages }}'}, u'name': u'ensure a list of packages installed', u'vars': {u'packages': [u'httpd', u'httpd-tools']}}]} should be a list or None but is <class 'ansible.parsing.yaml.objects.AnsibleMapping'>
+
+The error appears to be in '/home/umesh/with_items.yml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- hosts: test
+  ^ here
+
+2019-10-23 13:51:31,109 p=3377 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-23 13:51:31,119 p=3377 u=umesh |  TASK [ensure a list of packages installed] *****************************************************************************************************************************
+2019-10-23 13:51:40,992 p=3377 u=umesh |  changed: [34.68.17.61]
+2019-10-23 13:51:40,994 p=3377 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-23 13:51:40,994 p=3377 u=umesh |  34.68.17.61                : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-10-23 13:54:59,047 p=3475 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-23 13:54:59,056 p=3475 u=umesh |  TASK [add several users] ***********************************************************************************************************************************************
+2019-10-23 13:55:00,240 p=3475 u=umesh |  changed: [34.68.17.61] => (item=umesh1)
+2019-10-23 13:55:00,643 p=3475 u=umesh |  changed: [34.68.17.61] => (item=pranshant)
+2019-10-23 13:55:00,649 p=3475 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-23 13:55:00,649 p=3475 u=umesh |  34.68.17.61                : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-10-24 06:46:22,220 p=1466 u=umesh |  PLAY [localhost] *******************************************************************************************************************************************************
+2019-10-24 06:46:22,251 p=1466 u=umesh |  TASK [validating ignore errors] ****************************************************************************************************************************************
+2019-10-24 06:46:22,268 p=1466 u=umesh |  fatal: [localhost]: FAILED! => {"msg": "Invalid become method specified, could not find matching plugin: 'True'. Use `ansible-doc -t become -l` to list available plugins."}
+2019-10-24 06:46:22,268 p=1466 u=umesh |  ...ignoring
+2019-10-24 06:46:22,274 p=1466 u=umesh |  TASK [validating ignore errors] ****************************************************************************************************************************************
+2019-10-24 06:46:22,289 p=1466 u=umesh |  fatal: [localhost]: FAILED! => {"msg": "Invalid become method specified, could not find matching plugin: 'True'. Use `ansible-doc -t become -l` to list available plugins."}
+2019-10-24 06:46:22,289 p=1466 u=umesh |  ...ignoring
+2019-10-24 06:46:22,291 p=1466 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-24 06:46:22,292 p=1466 u=umesh |  localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=2   
+2019-10-24 06:53:15,962 p=1568 u=umesh |  PLAY [localhost] *******************************************************************************************************************************************************
+2019-10-24 06:53:15,972 p=1568 u=umesh |  TASK [validating ignore errors] ****************************************************************************************************************************************
+2019-10-24 06:53:15,986 p=1568 u=umesh |  fatal: [localhost]: FAILED! => {"msg": "Invalid become method specified, could not find matching plugin: 'True'. Use `ansible-doc -t become -l` to list available plugins."}
+2019-10-24 06:53:15,988 p=1568 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-24 06:53:15,988 p=1568 u=umesh |  localhost                  : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-10-24 06:54:21,738 p=1595 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-24 06:54:21,750 p=1595 u=umesh |  TASK [validating ignore errors] ****************************************************************************************************************************************
+2019-10-24 06:54:21,769 p=1595 u=umesh |  fatal: [34.68.17.61]: FAILED! => {"msg": "Invalid become method specified, could not find matching plugin: 'True'. Use `ansible-doc -t become -l` to list available plugins."}
+2019-10-24 06:54:21,769 p=1595 u=umesh |  ...ignoring
+2019-10-24 06:54:21,776 p=1595 u=umesh |  TASK [validating ignore errors] ****************************************************************************************************************************************
+2019-10-24 06:54:21,795 p=1595 u=umesh |  fatal: [34.68.17.61]: FAILED! => {"msg": "Invalid become method specified, could not find matching plugin: 'True'. Use `ansible-doc -t become -l` to list available plugins."}
+2019-10-24 06:54:21,795 p=1595 u=umesh |  ...ignoring
+2019-10-24 06:54:21,797 p=1595 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-24 06:54:21,798 p=1595 u=umesh |  34.68.17.61                : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=2   
+2019-10-24 07:02:46,351 p=1801 u=umesh |  ERROR! 'with_nested' is not a valid attribute for a Play
+
+The error appears to be in '/home/umesh/nested_loops.yml': line 2, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+  - hosts: test
+    ^ here
+
+2019-10-24 07:05:02,401 p=1858 u=umesh |  ERROR! 'with_nested' is not a valid attribute for a Play
+
+The error appears to be in '/home/umesh/nested_loops.yml': line 2, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+  - hosts: localhost
+    ^ here
+
+2019-10-24 07:05:30,388 p=1879 u=umesh |  ERROR! 'with_nested' is not a valid attribute for a Play
+
+The error appears to be in '/home/umesh/nested_loops.yml': line 2, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+  - hosts: localhost
+    ^ here
+
+2019-10-24 07:07:28,772 p=1901 u=umesh |  ERROR! 'host' is not a valid attribute for a Play
+
+The error appears to be in '/home/umesh/nested_loops.yml': line 2, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+  - host: localhost
+    ^ here
+
+2019-10-24 07:29:11,696 p=2210 u=umesh |   [WARNING]: While constructing a mapping from /home/umesh/loops_with_var.yml, line 6, column 11, found a duplicate dict key (prompt). Using last defined value only.
+
+2019-10-24 07:29:12,011 p=2210 u=umesh |  ERROR! 'ignore_erros' is not a valid attribute for a Task
+
+The error appears to be in '/home/umesh/loops_with_var.yml': line 11, column 8, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    tasks:
+     - name: installing multiple packages
+       ^ here
+
+This error can be suppressed as a warning using the "invalid_task_attribute_failed" configuration
+2019-10-24 07:37:33,831 p=2397 u=umesh |   [WARNING]: Could not match supplied host pattern, ignoring: dbservers
+
+2019-10-24 07:37:33,831 p=2397 u=umesh |   [WARNING]: Could not match supplied host pattern, ignoring: appservers
+
+2019-10-24 07:37:33,837 p=2397 u=umesh |  PLAY [localhost::dbservers::appservers] ********************************************************************************************************************************
+2019-10-24 07:37:33,884 p=2397 u=umesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-10-24 07:37:35,524 p=2397 u=umesh |  ok: [localhost]
+2019-10-24 07:37:35,548 p=2397 u=umesh |  TASK [installing httpd package] ****************************************************************************************************************************************
+2019-10-24 07:37:45,456 p=2397 u=umesh |  changed: [localhost]
+2019-10-24 07:37:45,493 p=2397 u=umesh |  TASK [copying index.html file] *****************************************************************************************************************************************
+2019-10-24 07:37:45,607 p=2397 u=umesh |  An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2019-10-24 07:37:45,608 p=2397 u=umesh |  fatal: [localhost]: FAILED! => {"changed": false, "msg": "Could not find or access 'index.html'\nSearched in:\n\t/home/umesh/files/index.html\n\t/home/umesh/index.html\n\t/home/umesh/files/index.html\n\t/home/umesh/index.html on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2019-10-24 07:37:45,609 p=2397 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-24 07:37:45,610 p=2397 u=umesh |  localhost                  : ok=2    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-10-24 07:43:54,796 p=2619 u=umesh |  PLAY [localhost] *******************************************************************************************************************************************************
+2019-10-24 07:43:54,806 p=2619 u=umesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-10-24 07:43:55,681 p=2619 u=umesh |  ok: [localhost]
+2019-10-24 07:43:55,689 p=2619 u=umesh |  ERROR! the field 'hosts' is required but was not set
+2019-10-24 07:45:09,647 p=2691 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-24 07:45:09,658 p=2691 u=umesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-10-24 07:45:19,699 p=2691 u=umesh |  fatal: [34.68.17.61]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 34.68.17.61 port 22: Connection timed out", "unreachable": true}
+2019-10-24 07:45:19,701 p=2691 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-24 07:45:19,701 p=2691 u=umesh |  34.68.17.61                : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2019-10-24 07:49:08,863 p=2751 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-24 07:49:08,872 p=2751 u=umesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-10-24 07:49:13,721 p=2751 u=umesh |  ok: [35.188.209.139]
+2019-10-24 07:49:13,724 p=2751 u=umesh |  ERROR! the field 'hosts' is required but was not set
+2019-10-24 07:50:41,126 p=2804 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-24 07:50:41,139 p=2804 u=umesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-10-24 07:50:45,218 p=2804 u=umesh |  ok: [35.232.120.158]
+2019-10-24 07:50:45,225 p=2804 u=umesh |  ERROR! the field 'hosts' is required but was not set
+2019-10-24 07:52:16,832 p=2969 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-24 07:52:16,844 p=2969 u=umesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-10-24 07:52:18,619 p=2969 u=umesh |  ok: [35.232.120.158]
+2019-10-24 07:52:18,627 p=2969 u=umesh |  ERROR! the field 'hosts' is required but was not set
+2019-10-24 07:52:40,625 p=3132 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-24 07:52:40,635 p=3132 u=umesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-10-24 07:52:42,141 p=3132 u=umesh |  ok: [35.188.209.139]
+2019-10-24 07:52:42,145 p=3132 u=umesh |  ERROR! the field 'hosts' is required but was not set
+2019-10-24 12:20:25,653 p=2138 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-24 12:20:25,692 p=2138 u=umesh |  TASK [validating ignore errors] ****************************************************************************************************************************************
+2019-10-24 12:20:25,705 p=2138 u=umesh |  fatal: [35.188.209.139]: FAILED! => {"msg": "Invalid become method specified, could not find matching plugin: 'True'. Use `ansible-doc -t become -l` to list available plugins."}
+2019-10-24 12:20:25,705 p=2138 u=umesh |  ...ignoring
+2019-10-24 12:20:25,710 p=2138 u=umesh |  TASK [validating ignore errors] ****************************************************************************************************************************************
+2019-10-24 12:20:25,721 p=2138 u=umesh |  fatal: [35.188.209.139]: FAILED! => {"msg": "Invalid become method specified, could not find matching plugin: 'True'. Use `ansible-doc -t become -l` to list available plugins."}
+2019-10-24 12:20:25,721 p=2138 u=umesh |  ...ignoring
+2019-10-24 12:20:25,723 p=2138 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-24 12:20:25,723 p=2138 u=umesh |  35.188.209.139             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=2   
+2019-10-24 12:21:06,771 p=2166 u=umesh |   [WARNING]: While constructing a mapping from /home/umesh/loops_with_var.yml, line 6, column 11, found a duplicate dict key (prompt). Using last defined value only.
+
+2019-10-24 12:21:07,174 p=2166 u=umesh |  ERROR! 'ignore_erros' is not a valid attribute for a Task
+
+The error appears to be in '/home/umesh/loops_with_var.yml': line 11, column 8, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    tasks:
+     - name: installing multiple packages
+       ^ here
+
+This error can be suppressed as a warning using the "invalid_task_attribute_failed" configuration
+2019-10-24 12:23:43,890 p=2202 u=umesh |  ERROR! Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/home/umesh/loops_with_var.yml': line 6, column 16, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+     - name: testpkg
+         prompt: Enter package name
+               ^ here
+
+2019-10-24 12:56:29,303 p=2664 u=umesh |  ERROR! playbook entries must be either a valid play or an include statement
+
+The error appears to be in '/home/umesh/installjavaintest.yml': line 6, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+ - role
+   ^ here
+
+2019-10-24 12:57:37,881 p=2744 u=umesh |  ERROR! playbook entries must be either a valid play or an include statement
+
+The error appears to be in '/home/umesh/installjavaintest.yml': line 6, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+ - role
+   ^ here
+
+2019-10-24 12:59:45,796 p=2793 u=umesh |  ERROR! playbook entries must be either a valid play or an include statement
+
+The error appears to be in '/home/umesh/installjavaintest.yml': line 6, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+ - role
+   ^ here
+
+2019-10-24 13:00:50,713 p=2814 u=umesh |  ERROR! Syntax Error while loading YAML.
+  did not find expected <document start>
+
+The error appears to be in '/home/umesh/installjavaintest.yml': line 6, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- role
+^ here
+
+2019-10-24 13:01:02,162 p=2836 u=umesh |  ERROR! Syntax Error while loading YAML.
+  did not find expected <document start>
+
+The error appears to be in '/home/umesh/installjavaintest.yml': line 6, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- role
+^ here
+
+2019-10-24 13:02:16,971 p=2859 u=umesh |  ERROR! playbook entries must be either a valid play or an include statement
+
+The error appears to be in '/home/umesh/installjavaintest.yml': line 6, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+ - role
+   ^ here
+
+2019-10-24 13:03:23,453 p=2880 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-24 13:03:23,479 p=2880 u=umesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-10-24 13:03:23,580 p=2880 u=umesh |  fatal: [35.188.209.139]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the ECDSA key sent by the remote host is\nSHA256:tkZC5t6kfRHnZRlo1o8/HBRX7XhMO5i/WEBNI7k50EY.\r\nPlease contact your system administrator.\r\nAdd correct host key in /home/umesh/.ssh/known_hosts to get rid of this message.\r\nOffending ECDSA key in /home/umesh/.ssh/known_hosts:2\r\nECDSA host key for 35.188.209.139 has changed and you have requested strict checking.\r\nHost key verification failed.", "unreachable": true}
+2019-10-24 13:03:23,581 p=2880 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-24 13:03:23,581 p=2880 u=umesh |  35.188.209.139             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2019-10-24 13:04:59,533 p=2910 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-24 13:04:59,542 p=2910 u=umesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-10-24 13:04:59,589 p=2910 u=umesh |  fatal: [35.188.209.139]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the ECDSA key sent by the remote host is\nSHA256:tkZC5t6kfRHnZRlo1o8/HBRX7XhMO5i/WEBNI7k50EY.\r\nPlease contact your system administrator.\r\nAdd correct host key in /home/umesh/.ssh/known_hosts to get rid of this message.\r\nOffending ECDSA key in /home/umesh/.ssh/known_hosts:2\r\nECDSA host key for 35.188.209.139 has changed and you have requested strict checking.\r\nHost key verification failed.", "unreachable": true}
+2019-10-24 13:04:59,590 p=2910 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-24 13:04:59,590 p=2910 u=umesh |  35.188.209.139             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2019-10-24 13:06:49,989 p=2939 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-24 13:06:49,998 p=2939 u=umesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-10-24 13:06:52,331 p=2939 u=umesh |  ok: [34.68.236.1]
+2019-10-24 13:06:52,333 p=2939 u=umesh |  ERROR! the field 'hosts' is required but was not set
+2019-10-24 13:08:40,901 p=2979 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-24 13:08:40,910 p=2979 u=umesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-10-24 13:08:42,364 p=2979 u=umesh |  ok: [34.68.236.1]
+2019-10-24 13:08:42,382 p=2979 u=umesh |  TASK [installjava : Install openjdk-8-jdk] *****************************************************************************************************************************
+2019-10-24 13:08:45,079 p=2979 u=umesh |  fatal: [34.68.236.1]: FAILED! => {"changed": false, "msg": "No package matching 'openjdk-8-jdk' found available, installed or updated", "rc": 126, "results": ["No package matching 'openjdk-8-jdk' found available, installed or updated"]}
+2019-10-24 13:08:45,080 p=2979 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-24 13:08:45,080 p=2979 u=umesh |  34.68.236.1                : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-10-24 13:11:39,888 p=3045 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-24 13:11:39,898 p=3045 u=umesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-10-24 13:11:41,369 p=3045 u=umesh |  ok: [34.68.236.1]
+2019-10-24 13:11:41,387 p=3045 u=umesh |  TASK [installjava : Install openjdk-8-jdk] *****************************************************************************************************************************
+2019-10-24 13:12:31,371 p=3045 u=umesh |  changed: [34.68.236.1]
+2019-10-24 13:12:31,373 p=3045 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-24 13:12:31,373 p=3045 u=umesh |  34.68.236.1                : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-10-24 13:28:23,995 p=3370 u=umesh |  - etchost was created successfully
+2019-10-24 13:29:27,563 p=3376 u=umesh |  - roles/etchost was created successfully
+2019-10-24 13:46:55,234 p=3582 u=umesh |  ERROR! 'var_files' is not a valid attribute for a Play
+
+The error appears to be in '/home/umesh/hosts.yml': line 2, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+ - hosts: test
+   ^ here
+
+2019-10-24 13:47:39,603 p=3603 u=umesh |  ERROR! Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/home/umesh/hosts.yml': line 3, column 10, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+- hosts: test
+   become: yes
+         ^ here
+
+2019-10-24 13:50:06,716 p=3692 u=umesh |  ERROR! 'var_files' is not a valid attribute for a Play
+
+The error appears to be in '/home/umesh/hosts.yml': line 2, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+ - hosts: test
+   ^ here
+
+2019-10-24 13:50:57,209 p=3714 u=umesh |  ERROR! 'var_files' is not a valid attribute for a Play
+
+The error appears to be in '/home/umesh/testhosts.yml': line 2, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+ - hosts: test
+   ^ here
+
+2019-10-24 13:52:00,097 p=3738 u=umesh |  ERROR! 'var_files' is not a valid attribute for a Play
+
+The error appears to be in '/home/umesh/testhosts.yml': line 2, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+ - hosts: test
+   ^ here
+
+2019-10-24 13:53:09,236 p=3747 u=umesh |  ERROR! vars file /home/umesh/roles/etchosts/files/main.yml was not found on the Ansible Controller.
+If you are using a module and expect the file to exist on the remote, see the remote_src option
+2019-10-24 13:57:58,991 p=3822 u=umesh |  ERROR! the role 'etc-hosts' was not found in /home/umesh/roles:/home/umesh/roles:/home/umesh
+
+The error appears to be in '/home/umesh/testhosts.yml': line 9, column 8, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+   roles:
+     - etc-hosts
+       ^ here
+
+2019-10-24 13:59:09,017 p=3846 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-24 13:59:09,026 p=3846 u=umesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-10-24 13:59:10,555 p=3846 u=umesh |  ok: [34.68.236.1]
+2019-10-24 13:59:10,592 p=3846 u=umesh |  TASK [etchosts : update host file] *************************************************************************************************************************************
+2019-10-24 13:59:10,737 p=3846 u=umesh |  An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2019-10-24 13:59:10,738 p=3846 u=umesh |  fatal: [34.68.236.1]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/umesh/roles/etchost/files/etc-hosts' on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2019-10-24 13:59:10,739 p=3846 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-24 13:59:10,739 p=3846 u=umesh |  34.68.236.1                : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-10-24 14:03:19,072 p=3952 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-24 14:03:19,081 p=3952 u=umesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-10-24 14:03:20,627 p=3952 u=umesh |  ok: [34.68.236.1]
+2019-10-24 14:03:20,646 p=3952 u=umesh |  TASK [etchosts : update host file] *************************************************************************************************************************************
+2019-10-24 14:03:20,738 p=3952 u=umesh |  An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2019-10-24 14:03:20,739 p=3952 u=umesh |  fatal: [34.68.236.1]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/umesh/roles/etchosts/files/etchosts' on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2019-10-24 14:03:20,740 p=3952 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-24 14:03:20,740 p=3952 u=umesh |  34.68.236.1                : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-10-24 14:08:18,120 p=4049 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-24 14:08:18,130 p=4049 u=umesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-10-24 14:08:19,658 p=4049 u=umesh |  ok: [34.68.236.1]
+2019-10-24 14:08:19,676 p=4049 u=umesh |  TASK [etchosts : update host file] *************************************************************************************************************************************
+2019-10-24 14:08:19,767 p=4049 u=umesh |  An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2019-10-24 14:08:19,767 p=4049 u=umesh |  fatal: [34.68.236.1]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/umesh/roles/etchosts/files/etchosts' on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2019-10-24 14:08:19,768 p=4049 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-24 14:08:19,769 p=4049 u=umesh |  34.68.236.1                : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-10-24 14:30:18,282 p=4421 u=umesh |  Encryption successful
+2019-10-24 14:31:48,278 p=4443 u=umesh |  ERROR! Decryption failed (no vault secrets were found that could decrypt) on /home/umesh/password.txt for /home/umesh/password.txt
+2019-10-24 14:31:55,903 p=4448 u=umesh |  Decryption successful
+2019-10-24 14:34:10,367 p=4472 u=umesh |  Encryption successful
+2019-10-24 14:34:31,443 p=4552 u=umesh |  ERROR! Attempting to decrypt but no vault secrets found
+2019-10-24 14:35:38,060 p=4558 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-24 14:35:38,069 p=4558 u=umesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-10-24 14:35:39,620 p=4558 u=umesh |  ok: [34.68.236.1]
+2019-10-24 14:35:39,639 p=4558 u=umesh |  TASK [Copies files to remote locations] ********************************************************************************************************************************
+2019-10-24 14:35:41,077 p=4558 u=umesh |  ok: [34.68.236.1]
+2019-10-24 14:35:41,079 p=4558 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-24 14:35:41,079 p=4558 u=umesh |  34.68.236.1                : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-10-24 14:53:31,769 p=4811 u=umesh |  Using /home/umesh/ansible.cfg as config file
+2019-10-24 14:53:31,930 p=4811 u=umesh |  ERROR! Attempting to decrypt but no vault secrets found
+2019-10-24 14:54:08,373 p=4817 u=umesh |  Decryption successful
+2019-10-24 14:54:16,216 p=4823 u=umesh |  Using /home/umesh/ansible.cfg as config file
+2019-10-24 14:54:16,612 p=4823 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-24 14:54:16,621 p=4823 u=umesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-10-24 14:54:18,160 p=4823 u=umesh |  ok: [34.68.236.1]
+2019-10-24 14:54:18,178 p=4823 u=umesh |  TASK [Copies files to remote locations] ********************************************************************************************************************************
+2019-10-24 14:54:19,441 p=4823 u=umesh |  ok: [34.68.236.1] => {"changed": false, "checksum": "aab7b1503aa6e03622b3f5e4db7658821805321c", "dest": "/tmp/test.txt", "gid": 1001, "group": "umesh", "mode": "0644", "owner": "umesh", "path": "/tmp/test.txt", "secontext": "unconfined_u:object_r:user_home_t:s0", "size": 21, "state": "file", "uid": 1000}
+2019-10-24 14:54:19,443 p=4823 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-24 14:54:19,443 p=4823 u=umesh |  34.68.236.1                : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-10-24 14:54:37,072 p=4864 u=umesh |  ansible-playbook 2.8.5
+  config file = /home/umesh/ansible.cfg
+  configured module search path = [u'/home/umesh/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/site-packages/ansible
+  executable location = /usr/bin/ansible-playbook
+  python version = 2.7.5 (default, Aug  7 2019, 00:51:29) [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+2019-10-24 14:54:37,073 p=4864 u=umesh |  Using /home/umesh/ansible.cfg as config file
+2019-10-24 14:54:37,434 p=4864 u=umesh |  PLAYBOOK: playbook.yml *************************************************************************************************************************************************
+2019-10-24 14:54:37,434 p=4864 u=umesh |  1 plays in playbook.yml
+2019-10-24 14:54:37,462 p=4864 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-24 14:54:37,471 p=4864 u=umesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-10-24 14:54:37,471 p=4864 u=umesh |  task path: /home/umesh/playbook.yml:2
+2019-10-24 14:54:38,581 p=4864 u=umesh |  ok: [34.68.236.1]
+2019-10-24 14:54:38,582 p=4864 u=umesh |  META: ran handlers
+2019-10-24 14:54:38,600 p=4864 u=umesh |  TASK [Copies files to remote locations] ********************************************************************************************************************************
+2019-10-24 14:54:38,600 p=4864 u=umesh |  task path: /home/umesh/playbook.yml:8
+2019-10-24 14:54:39,881 p=4864 u=umesh |  ok: [34.68.236.1] => {"changed": false, "checksum": "aab7b1503aa6e03622b3f5e4db7658821805321c", "dest": "/tmp/test.txt", "gid": 1001, "group": "umesh", "mode": "0644", "owner": "umesh", "path": "/tmp/test.txt", "secontext": "unconfined_u:object_r:user_home_t:s0", "size": 21, "state": "file", "uid": 1000}
+2019-10-24 14:54:39,882 p=4864 u=umesh |  META: ran handlers
+2019-10-24 14:54:39,882 p=4864 u=umesh |  META: ran handlers
+2019-10-24 14:54:39,883 p=4864 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-24 14:54:39,883 p=4864 u=umesh |  34.68.236.1                : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-10-24 14:55:14,541 p=4916 u=umesh |  ansible-playbook 2.8.5
+  config file = /home/umesh/ansible.cfg
+  configured module search path = [u'/home/umesh/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/site-packages/ansible
+  executable location = /usr/bin/ansible-playbook
+  python version = 2.7.5 (default, Aug  7 2019, 00:51:29) [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+2019-10-24 14:55:14,541 p=4916 u=umesh |  Using /home/umesh/ansible.cfg as config file
+2019-10-24 14:55:14,549 p=4916 u=umesh |  host_list declined parsing /home/umesh/hosts as it did not pass it's verify_file() method
+2019-10-24 14:55:14,549 p=4916 u=umesh |  script declined parsing /home/umesh/hosts as it did not pass it's verify_file() method
+2019-10-24 14:55:14,549 p=4916 u=umesh |  auto declined parsing /home/umesh/hosts as it did not pass it's verify_file() method
+2019-10-24 14:55:14,552 p=4916 u=umesh |  Parsed /home/umesh/hosts inventory source with ini plugin
+2019-10-24 14:55:14,903 p=4916 u=umesh |  PLAYBOOK: playbook.yml *************************************************************************************************************************************************
+2019-10-24 14:55:14,904 p=4916 u=umesh |  1 plays in playbook.yml
+2019-10-24 14:55:14,932 p=4916 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-24 14:55:14,941 p=4916 u=umesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-10-24 14:55:14,942 p=4916 u=umesh |  task path: /home/umesh/playbook.yml:2
+2019-10-24 14:55:14,955 p=4916 u=umesh |  <34.68.236.1> ESTABLISH SSH CONNECTION FOR USER: None
+2019-10-24 14:55:14,956 p=4916 u=umesh |  <34.68.236.1> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o ConnectTimeout=10 -o ControlPath=/home/umesh/.ansible/cp/355f305444 34.68.236.1 '/bin/sh -c '"'"'echo ~ && sleep 0'"'"''
+2019-10-24 14:55:14,993 p=4916 u=umesh |  <34.68.236.1> (0, '/home/umesh\n', '')
+2019-10-24 14:55:14,993 p=4916 u=umesh |  <34.68.236.1> ESTABLISH SSH CONNECTION FOR USER: None
+2019-10-24 14:55:14,994 p=4916 u=umesh |  <34.68.236.1> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o ConnectTimeout=10 -o ControlPath=/home/umesh/.ansible/cp/355f305444 34.68.236.1 '/bin/sh -c '"'"'( umask 77 && mkdir -p "` echo /home/umesh/.ansible/tmp/ansible-tmp-1571928914.95-108205125084806 `" && echo ansible-tmp-1571928914.95-108205125084806="` echo /home/umesh/.ansible/tmp/ansible-tmp-1571928914.95-108205125084806 `" ) && sleep 0'"'"''
+2019-10-24 14:55:15,043 p=4916 u=umesh |  <34.68.236.1> (0, 'ansible-tmp-1571928914.95-108205125084806=/home/umesh/.ansible/tmp/ansible-tmp-1571928914.95-108205125084806\n', '')
+2019-10-24 14:55:15,401 p=4916 u=umesh |  <34.68.236.1> Attempting python interpreter discovery
+2019-10-24 14:55:15,401 p=4916 u=umesh |  <34.68.236.1> ESTABLISH SSH CONNECTION FOR USER: None
+2019-10-24 14:55:15,402 p=4916 u=umesh |  <34.68.236.1> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o ConnectTimeout=10 -o ControlPath=/home/umesh/.ansible/cp/355f305444 34.68.236.1 '/bin/sh -c '"'"'echo PLATFORM; uname; echo FOUND; command -v '"'"'"'"'"'"'"'"'/usr/bin/python'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.7'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.6'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.5'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python2.7'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python2.6'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'/usr/libexec/platform-python'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'/usr/bin/python3'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python'"'"'"'"'"'"'"'"'; echo ENDFOUND && sleep 0'"'"''
+2019-10-24 14:55:15,437 p=4916 u=umesh |  <34.68.236.1> (0, 'PLATFORM\nLinux\nFOUND\n/usr/bin/python\n/usr/bin/python2.7\n/usr/libexec/platform-python\n/usr/bin/python\nENDFOUND\n', '')
+2019-10-24 14:55:15,438 p=4916 u=umesh |  <34.68.236.1> ESTABLISH SSH CONNECTION FOR USER: None
+2019-10-24 14:55:15,439 p=4916 u=umesh |  <34.68.236.1> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o ConnectTimeout=10 -o ControlPath=/home/umesh/.ansible/cp/355f305444 34.68.236.1 '/bin/sh -c '"'"'/usr/bin/python && sleep 0'"'"''
+2019-10-24 14:55:15,496 p=4916 u=umesh |  <34.68.236.1> (0, '{"osrelease_content": "NAME=\\"CentOS Linux\\"\\nVERSION=\\"7 (Core)\\"\\nID=\\"centos\\"\\nID_LIKE=\\"rhel fedora\\"\\nVERSION_ID=\\"7\\"\\nPRETTY_NAME=\\"CentOS Linux 7 (Core)\\"\\nANSI_COLOR=\\"0;31\\"\\nCPE_NAME=\\"cpe:/o:centos:centos:7\\"\\nHOME_URL=\\"https://www.centos.org/\\"\\nBUG_REPORT_URL=\\"https://bugs.centos.org/\\"\\n\\nCENTOS_MANTISBT_PROJECT=\\"CentOS-7\\"\\nCENTOS_MANTISBT_PROJECT_VERSION=\\"7\\"\\nREDHAT_SUPPORT_PRODUCT=\\"centos\\"\\nREDHAT_SUPPORT_PRODUCT_VERSION=\\"7\\"\\n\\n", "platform_dist_result": ["centos", "7.7.1908", "Core"]}\n', '')
+2019-10-24 14:55:15,500 p=4916 u=umesh |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/system/setup.py
+2019-10-24 14:55:15,501 p=4916 u=umesh |  <34.68.236.1> PUT /home/umesh/.ansible/tmp/ansible-local-4916yZRyjk/tmp9OeDk6 TO /home/umesh/.ansible/tmp/ansible-tmp-1571928914.95-108205125084806/AnsiballZ_setup.py
+2019-10-24 14:55:15,502 p=4916 u=umesh |  <34.68.236.1> SSH: EXEC sftp -b - -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o ConnectTimeout=10 -o ControlPath=/home/umesh/.ansible/cp/355f305444 '[34.68.236.1]'
+2019-10-24 14:55:15,568 p=4916 u=umesh |  <34.68.236.1> (0, 'sftp> put /home/umesh/.ansible/tmp/ansible-local-4916yZRyjk/tmp9OeDk6 /home/umesh/.ansible/tmp/ansible-tmp-1571928914.95-108205125084806/AnsiballZ_setup.py\n', '')
+2019-10-24 14:55:15,568 p=4916 u=umesh |  <34.68.236.1> ESTABLISH SSH CONNECTION FOR USER: None
+2019-10-24 14:55:15,569 p=4916 u=umesh |  <34.68.236.1> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o ConnectTimeout=10 -o ControlPath=/home/umesh/.ansible/cp/355f305444 34.68.236.1 '/bin/sh -c '"'"'chmod u+x /home/umesh/.ansible/tmp/ansible-tmp-1571928914.95-108205125084806/ /home/umesh/.ansible/tmp/ansible-tmp-1571928914.95-108205125084806/AnsiballZ_setup.py && sleep 0'"'"''
+2019-10-24 14:55:15,604 p=4916 u=umesh |  <34.68.236.1> (0, '', '')
+2019-10-24 14:55:15,605 p=4916 u=umesh |  <34.68.236.1> ESTABLISH SSH CONNECTION FOR USER: None
+2019-10-24 14:55:15,606 p=4916 u=umesh |  <34.68.236.1> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o ConnectTimeout=10 -o ControlPath=/home/umesh/.ansible/cp/355f305444 -tt 34.68.236.1 '/bin/sh -c '"'"'sudo -H -S -n  -u root /bin/sh -c '"'"'"'"'"'"'"'"'echo BECOME-SUCCESS-faxttyvzxpzmlrjhlrfaafvnspvsbawe ; /usr/bin/python /home/umesh/.ansible/tmp/ansible-tmp-1571928914.95-108205125084806/AnsiballZ_setup.py'"'"'"'"'"'"'"'"' && sleep 0'"'"''
+2019-10-24 14:55:15,666 p=4916 u=umesh |  Escalation succeeded
+2019-10-24 14:55:16,024 p=4916 u=umesh |  <34.68.236.1> (0, '\r\n{"invocation": {"module_args": {"filter": "*", "gather_subset": ["all"], "fact_path": "/etc/ansible/facts.d", "gather_timeout": 10}}, "ansible_facts": {"ansible_fibre_channel_wwn": [], "module_setup": true, "ansible_distribution_version": "7.7", "ansible_distribution_file_variety": "RedHat", "ansible_env": {"USERNAME": "root", "LANG": "en_US.UTF-8", "TERM": "xterm", "SHELL": "/bin/bash", "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-faxttyvzxpzmlrjhlrfaafvnspvsbawe ; /usr/bin/python /home/umesh/.ansible/tmp/ansible-tmp-1571928914.95-108205125084806/AnsiballZ_setup.py", "SHLVL": "1", "XDG_SESSION_ID": "14", "SUDO_UID": "1000", "SUDO_GID": "1001", "PWD": "/home/umesh", "LOGNAME": "root", "USER": "root", "MAIL": "/var/mail/umesh", "PATH": "/sbin:/bin:/usr/sbin:/usr/bin", "SUDO_USER": "umesh", "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:", "HOME": "/root", "_": "/usr/bin/python"}, "ansible_userspace_bits": "64", "ansible_architecture": "x86_64", "ansible_default_ipv4": {"macaddress": "42:01:0a:80:00:05", "network": "10.128.0.5", "mtu": 1460, "broadcast": "10.128.0.5", "alias": "eth0", "netmask": "255.255.255.255", "address": "10.128.0.5", "interface": "eth0", "type": "ether", "gateway": "10.128.0.1"}, "ansible_swapfree_mb": 0, "ansible_default_ipv6": {}, "ansible_cmdline": {"BOOT_IMAGE": "/boot/vmlinuz-3.10.0-1062.1.2.el7.x86_64", "ro": true, "root": "UUID=b8a07faa-b86b-406b-9158-c5d9c617a5e7", "crashkernel": "auto", "console": "ttyS0,38400n8"}, "ansible_machine_id": "058b0c5236a18eca3eab4976f4c5072a", "ansible_userspace_architecture": "x86_64", "ansible_product_uuid": "6E220D8B-5555-3540-E425-FB0CA7C58A31", "ansible_pkg_mgr": "yum", "ansible_distribution": "CentOS", "ansible_iscsi_iqn": "", "ansible_all_ipv6_addresses": ["fe80::4001:aff:fe80:5"], "ansible_uptime_seconds": 13414, "ansible_kernel": "3.10.0-1062.1.2.el7.x86_64", "ansible_system_capabilities_enforced": "True", "ansible_python": {"executable": "/usr/bin/python", "version": {"micro": 5, "major": 2, "releaselevel": "final", "serial": 0, "minor": 7}, "type": "CPython", "has_sslcontext": true, "version_info": [2, 7, 5, "final", 0]}, "ansible_is_chroot": false, "ansible_hostnqn": "", "ansible_user_shell": "/bin/bash", "ansible_product_serial": "GoogleCloud-6E220D8B55553540E425FB0CA7C58A31", "ansible_form_factor": "Other", "ansible_distribution_file_parsed": true, "ansible_fips": false, "ansible_user_id": "root", "ansible_selinux_python_present": true, "ansible_local": {}, "ansible_processor_vcpus": 1, "ansible_processor": ["0", "GenuineIntel", "Intel(R) Xeon(R) CPU @ 2.30GHz"], "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBLzA2s8Nw6ZiOrJemjBLVZ/qWa4geaZfVr8U7EX05MBqisfZbISVPDqkrpU54lRaFwwR6gNZzF28GTKJqXv6J6k=", "ansible_user_gid": 0, "ansible_system_vendor": "Google", "ansible_swaptotal_mb": 0, "ansible_distribution_major_version": "7", "ansible_real_group_id": 0, "ansible_lsb": {}, "ansible_machine": "x86_64", "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQCs8fmsdk0H+Og5A6OZrFRr3d6Qqd2dfAdUwoYcmQUX8rXqnjBrRdscikBCcf7ZfM7au7D0dUXgvmVp7EksvqgfUKGhgul2JaZ6UOXhe7yaT5riXj1pu3xJptJXBd61oWRwg8oFzz8lQ2cSQV6BLnpqgqY5FRK+ByF4Q4jHrSRXzi71VR+8wXVITtcCFBfGpckvCrLBP9LywReAEFQc39/tQg7FOWiMzsGbma5pD5psgPmTnTx0VXbt+YLYVobth4gx1x2zODcnoeuchGU1hZSqG3fKtcFFhCPSleEDJlPTH6CMiRqvt2xjD7j8jHWO/41hrPe664WIDjYFnuVfE5TZ", "ansible_user_gecos": "root", "ansible_processor_threads_per_core": 1, "ansible_eth0": {"macaddress": "42:01:0a:80:00:05", "features": {"tx_checksum_ipv4": "off [fixed]", "generic_receive_offload": "on", "tx_checksum_ipv6": "off [fixed]", "tx_scatter_gather_fraglist": "off [fixed]", "rx_all": "off [fixed]", "highdma": "on [fixed]", "rx_fcs": "off [fixed]", "tx_lockless": "off [fixed]", "tx_tcp_ecn_segmentation": "off [fixed]", "rx_udp_tunnel_port_offload": "off [fixed]", "tx_tcp6_segmentation": "on", "tx_gso_robust": "off [fixed]", "tx_ipip_segmentation": "off [fixed]", "tx_tcp_mangleid_segmentation": "off", "tx_checksumming": "on", "vlan_challenged": "off [fixed]", "loopback": "off [fixed]", "fcoe_mtu": "off [fixed]", "scatter_gather": "on", "tx_checksum_sctp": "off [fixed]", "tx_vlan_stag_hw_insert": "off [fixed]", "rx_vlan_stag_hw_parse": "off [fixed]", "tx_gso_partial": "off [fixed]", "rx_gro_hw": "off [fixed]", "rx_vlan_stag_filter": "off [fixed]", "large_receive_offload": "off [fixed]", "tx_scatter_gather": "on", "rx_checksumming": "on [fixed]", "tx_tcp_segmentation": "on", "netns_local": "off [fixed]", "busy_poll": "off [fixed]", "generic_segmentation_offload": "on", "tx_udp_tnl_segmentation": "off [fixed]", "tcp_segmentation_offload": "on", "l2_fwd_offload": "off [fixed]", "rx_vlan_offload": "off [fixed]", "ntuple_filters": "off [fixed]", "tx_gre_csum_segmentation": "off [fixed]", "tx_nocache_copy": "off", "tx_udp_tnl_csum_segmentation": "off [fixed]", "udp_fragmentation_offload": "off [fixed]", "tx_sctp_segmentation": "off [fixed]", "tx_sit_segmentation": "off [fixed]", "tx_checksum_fcoe_crc": "off [fixed]", "hw_tc_offload": "off [fixed]", "tx_checksum_ip_generic": "on", "tx_fcoe_segmentation": "off [fixed]", "rx_vlan_filter": "off [fixed]", "tx_vlan_offload": "off [fixed]", "receive_hashing": "off [fixed]", "tx_gre_segmentation": "off [fixed]"}, "pciid": "virtio1", "module": "virtio_net", "mtu": 1460, "device": "eth0", "promisc": false, "timestamping": ["rx_software", "software"], "ipv4": {"broadcast": "10.128.0.5", "netmask": "255.255.255.255", "network": "10.128.0.5", "address": "10.128.0.5"}, "ipv6": [{"scope": "link", "prefix": "64", "address": "fe80::4001:aff:fe80:5"}], "active": true, "type": "ether", "hw_timestamp_filters": []}, "ansible_product_name": "Google Compute Engine", "ansible_all_ipv4_addresses": ["10.128.0.5"], "ansible_python_version": "2.7.5", "ansible_product_version": "NA", "ansible_service_mgr": "systemd", "ansible_memory_mb": {"real": {"total": 3537, "used": 720, "free": 2817}, "swap": {"cached": 0, "total": 0, "free": 0, "used": 0}, "nocache": {"used": 270, "free": 3267}}, "ansible_user_dir": "/root", "gather_subset": ["all"], "ansible_real_user_id": 0, "ansible_virtualization_role": "guest", "ansible_dns": {"nameservers": ["169.254.169.254"], "search": ["us-central1-a.c.calcium-alchemy-256712.internal", "c.calcium-alchemy-256712.internal", "google.internal"]}, "ansible_effective_group_id": 0, "ansible_lo": {"features": {"tx_checksum_ipv4": "off [fixed]", "generic_receive_offload": "on", "tx_checksum_ipv6": "off [fixed]", "tx_scatter_gather_fraglist": "on [fixed]", "rx_all": "off [fixed]", "highdma": "on [fixed]", "rx_fcs": "off [fixed]", "tx_lockless": "on [fixed]", "tx_tcp_ecn_segmentation": "on", "rx_udp_tunnel_port_offload": "off [fixed]", "tx_tcp6_segmentation": "on", "tx_gso_robust": "off [fixed]", "tx_ipip_segmentation": "off [fixed]", "tx_tcp_mangleid_segmentation": "on", "tx_checksumming": "on", "vlan_challenged": "on [fixed]", "loopback": "on [fixed]", "fcoe_mtu": "off [fixed]", "scatter_gather": "on", "tx_checksum_sctp": "on [fixed]", "tx_vlan_stag_hw_insert": "off [fixed]", "rx_vlan_stag_hw_parse": "off [fixed]", "tx_gso_partial": "off [fixed]", "rx_gro_hw": "off [fixed]", "rx_vlan_stag_filter": "off [fixed]", "large_receive_offload": "off [fixed]", "tx_scatter_gather": "on [fixed]", "rx_checksumming": "on [fixed]", "tx_tcp_segmentation": "on", "netns_local": "on [fixed]", "busy_poll": "off [fixed]", "generic_segmentation_offload": "on", "tx_udp_tnl_segmentation": "off [fixed]", "tcp_segmentation_offload": "on", "l2_fwd_offload": "off [fixed]", "rx_vlan_offload": "off [fixed]", "ntuple_filters": "off [fixed]", "tx_gre_csum_segmentation": "off [fixed]", "tx_nocache_copy": "off [fixed]", "tx_udp_tnl_csum_segmentation": "off [fixed]", "udp_fragmentation_offload": "on", "tx_sctp_segmentation": "on", "tx_sit_segmentation": "off [fixed]", "tx_checksum_fcoe_crc": "off [fixed]", "hw_tc_offload": "off [fixed]", "tx_checksum_ip_generic": "on [fixed]", "tx_fcoe_segmentation": "off [fixed]", "rx_vlan_filter": "off [fixed]", "tx_vlan_offload": "off [fixed]", "receive_hashing": "off [fixed]", "tx_gre_segmentation": "off [fixed]"}, "hw_timestamp_filters": [], "mtu": 65536, "device": "lo", "promisc": false, "timestamping": ["rx_software", "software"], "ipv4": {"broadcast": "host", "netmask": "255.0.0.0", "network": "127.0.0.0", "address": "127.0.0.1"}, "ipv6": [{"scope": "host", "prefix": "128", "address": "::1"}], "active": true, "type": "loopback"}, "ansible_memtotal_mb": 3537, "ansible_device_links": {"masters": {}, "labels": {"sda1": ["\\\\x2f"]}, "ids": {"sda": ["google-umeshmanage1", "scsi-0Google_PersistentDisk_umeshmanage1"], "sda1": ["google-umeshmanage1-part1", "scsi-0Google_PersistentDisk_umeshmanage1-part1"]}, "uuids": {"sda1": ["b8a07faa-b86b-406b-9158-c5d9c617a5e7"]}}, "ansible_apparmor": {"status": "disabled"}, "ansible_proc_cmdline": {"BOOT_IMAGE": "/boot/vmlinuz-3.10.0-1062.1.2.el7.x86_64", "ro": true, "root": "UUID=b8a07faa-b86b-406b-9158-c5d9c617a5e7", "crashkernel": "auto", "console": "ttyS0,38400n8"}, "ansible_memfree_mb": 2817, "ansible_processor_count": 1, "ansible_hostname": "umeshmanage1", "ansible_interfaces": ["lo", "eth0"], "ansible_selinux": {"status": "enabled", "policyvers": 31, "type": "targeted", "mode": "enforcing", "config_mode": "enforcing"}, "ansible_fqdn": "umeshmanage1.us-central1-a.c.calcium-alchemy-256712.internal", "ansible_mounts": [{"block_used": 552502, "uuid": "b8a07faa-b86b-406b-9158-c5d9c617a5e7", "size_total": 10725883904, "block_total": 2618624, "mount": "/", "block_available": 2066122, "size_available": 8462835712, "fstype": "xfs", "inode_total": 5242368, "options": "rw,seclabel,relatime,attr2,inode64,noquota", "device": "/dev/sda1", "inode_used": 64152, "block_size": 4096, "inode_available": 5178216}], "ansible_nodename": "umeshmanage1", "ansible_domain": "us-central1-a.c.calcium-alchemy-256712.internal", "ansible_distribution_file_path": "/etc/redhat-release", "ansible_virtualization_type": "kvm", "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIOQuZE85iW1ng1/Afpohc1QXLlwZoetkV5ykfK51DXAV", "ansible_processor_cores": 1, "ansible_bios_version": "Google", "ansible_date_time": {"weekday_number": "4", "iso8601_basic_short": "20191024T145516", "tz": "UTC", "weeknumber": "42", "hour": "14", "year": "2019", "minute": "55", "tz_offset": "+0000", "month": "10", "epoch": "1571928916", "iso8601_micro": "2019-10-24T14:55:16.004483Z", "weekday": "Thursday", "time": "14:55:16", "date": "2019-10-24", "iso8601": "2019-10-24T14:55:16Z", "day": "24", "iso8601_basic": "20191024T145516004384", "second": "16"}, "ansible_distribution_release": "Core", "ansible_os_family": "RedHat", "ansible_effective_user_id": 0, "ansible_system": "Linux", "ansible_devices": {"sda": {"scheduler_mode": "deadline", "rotational": "1", "vendor": "Google", "sectors": "20971520", "links": {"masters": [], "labels": [], "ids": ["google-umeshmanage1", "scsi-0Google_PersistentDisk_umeshmanage1"], "uuids": []}, "sas_device_handle": null, "sas_address": null, "virtual": 1, "host": "", "sectorsize": "512", "removable": "0", "support_discard": "512", "model": "PersistentDisk", "partitions": {"sda1": {"sectorsize": 512, "uuid": "b8a07faa-b86b-406b-9158-c5d9c617a5e7", "links": {"masters": [], "labels": ["\\\\x2f"], "ids": ["google-umeshmanage1-part1", "scsi-0Google_PersistentDisk_umeshmanage1-part1"], "uuids": ["b8a07faa-b86b-406b-9158-c5d9c617a5e7"]}, "sectors": "20969472", "start": "2048", "holders": [], "size": "10.00 GB"}}, "holders": [], "size": "10.00 GB"}}, "ansible_user_uid": 0, "ansible_bios_date": "01/01/2011", "ansible_system_capabilities": ["cap_chown", "cap_dac_override", "cap_dac_read_search", "cap_fowner", "cap_fsetid", "cap_kill", "cap_setgid", "cap_setuid", "cap_setpcap", "cap_linux_immutable", "cap_net_bind_service", "cap_net_broadcast", "cap_net_admin", "cap_net_raw", "cap_ipc_lock", "cap_ipc_owner", "cap_sys_module", "cap_sys_rawio", "cap_sys_chroot", "cap_sys_ptrace", "cap_sys_pacct", "cap_sys_admin", "cap_sys_boot", "cap_sys_nice", "cap_sys_resource", "cap_sys_time", "cap_sys_tty_config", "cap_mknod", "cap_lease", "cap_audit_write", "cap_audit_control", "cap_setfcap", "cap_mac_override", "cap_mac_admin", "cap_syslog", "35", "36+ep"]}}\r\n', 'Shared connection to 34.68.236.1 closed.\r\n')
+2019-10-24 14:55:16,031 p=4916 u=umesh |  <34.68.236.1> ESTABLISH SSH CONNECTION FOR USER: None
+2019-10-24 14:55:16,032 p=4916 u=umesh |  <34.68.236.1> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o ConnectTimeout=10 -o ControlPath=/home/umesh/.ansible/cp/355f305444 34.68.236.1 '/bin/sh -c '"'"'rm -f -r /home/umesh/.ansible/tmp/ansible-tmp-1571928914.95-108205125084806/ > /dev/null 2>&1 && sleep 0'"'"''
+2019-10-24 14:55:16,069 p=4916 u=umesh |  <34.68.236.1> (0, '', '')
+2019-10-24 14:55:16,095 p=4916 u=umesh |  ok: [34.68.236.1]
+2019-10-24 14:55:16,096 p=4916 u=umesh |  META: ran handlers
+2019-10-24 14:55:16,114 p=4916 u=umesh |  TASK [Copies files to remote locations] ********************************************************************************************************************************
+2019-10-24 14:55:16,114 p=4916 u=umesh |  task path: /home/umesh/playbook.yml:8
+2019-10-24 14:55:16,127 p=4916 u=umesh |  <34.68.236.1> ESTABLISH SSH CONNECTION FOR USER: None
+2019-10-24 14:55:16,128 p=4916 u=umesh |  <34.68.236.1> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o ConnectTimeout=10 -o ControlPath=/home/umesh/.ansible/cp/355f305444 34.68.236.1 '/bin/sh -c '"'"'echo ~ && sleep 0'"'"''
+2019-10-24 14:55:16,161 p=4916 u=umesh |  <34.68.236.1> (0, '/home/umesh\n', '')
+2019-10-24 14:55:16,161 p=4916 u=umesh |  <34.68.236.1> ESTABLISH SSH CONNECTION FOR USER: None
+2019-10-24 14:55:16,162 p=4916 u=umesh |  <34.68.236.1> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o ConnectTimeout=10 -o ControlPath=/home/umesh/.ansible/cp/355f305444 34.68.236.1 '/bin/sh -c '"'"'( umask 77 && mkdir -p "` echo /home/umesh/.ansible/tmp/ansible-tmp-1571928916.13-10510903766409 `" && echo ansible-tmp-1571928916.13-10510903766409="` echo /home/umesh/.ansible/tmp/ansible-tmp-1571928916.13-10510903766409 `" ) && sleep 0'"'"''
+2019-10-24 14:55:16,198 p=4916 u=umesh |  <34.68.236.1> (0, 'ansible-tmp-1571928916.13-10510903766409=/home/umesh/.ansible/tmp/ansible-tmp-1571928916.13-10510903766409\n', '')
+2019-10-24 14:55:16,381 p=4916 u=umesh |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/files/stat.py
+2019-10-24 14:55:16,381 p=4916 u=umesh |  <34.68.236.1> PUT /home/umesh/.ansible/tmp/ansible-local-4916yZRyjk/tmpq2485d TO /home/umesh/.ansible/tmp/ansible-tmp-1571928916.13-10510903766409/AnsiballZ_stat.py
+2019-10-24 14:55:16,382 p=4916 u=umesh |  <34.68.236.1> SSH: EXEC sftp -b - -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o ConnectTimeout=10 -o ControlPath=/home/umesh/.ansible/cp/355f305444 '[34.68.236.1]'
+2019-10-24 14:55:16,437 p=4916 u=umesh |  <34.68.236.1> (0, 'sftp> put /home/umesh/.ansible/tmp/ansible-local-4916yZRyjk/tmpq2485d /home/umesh/.ansible/tmp/ansible-tmp-1571928916.13-10510903766409/AnsiballZ_stat.py\n', '')
+2019-10-24 14:55:16,438 p=4916 u=umesh |  <34.68.236.1> ESTABLISH SSH CONNECTION FOR USER: None
+2019-10-24 14:55:16,439 p=4916 u=umesh |  <34.68.236.1> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o ConnectTimeout=10 -o ControlPath=/home/umesh/.ansible/cp/355f305444 34.68.236.1 '/bin/sh -c '"'"'chmod u+x /home/umesh/.ansible/tmp/ansible-tmp-1571928916.13-10510903766409/ /home/umesh/.ansible/tmp/ansible-tmp-1571928916.13-10510903766409/AnsiballZ_stat.py && sleep 0'"'"''
+2019-10-24 14:55:16,474 p=4916 u=umesh |  <34.68.236.1> (0, '', '')
+2019-10-24 14:55:16,474 p=4916 u=umesh |  <34.68.236.1> ESTABLISH SSH CONNECTION FOR USER: None
+2019-10-24 14:55:16,475 p=4916 u=umesh |  <34.68.236.1> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o ConnectTimeout=10 -o ControlPath=/home/umesh/.ansible/cp/355f305444 -tt 34.68.236.1 '/bin/sh -c '"'"'sudo -H -S -n  -u root /bin/sh -c '"'"'"'"'"'"'"'"'echo BECOME-SUCCESS-bttlcvsggrbbzknvwruwmvocqgsubgdu ; /usr/bin/python /home/umesh/.ansible/tmp/ansible-tmp-1571928916.13-10510903766409/AnsiballZ_stat.py'"'"'"'"'"'"'"'"' && sleep 0'"'"''
+2019-10-24 14:55:16,531 p=4916 u=umesh |  Escalation succeeded
+2019-10-24 14:55:16,642 p=4916 u=umesh |  <34.68.236.1> (0, '\r\n{"invocation": {"module_args": {"checksum_algorithm": "sha1", "get_checksum": true, "follow": false, "path": "/tmp", "get_md5": null, "get_mime": true, "get_attributes": true}}, "stat": {"charset": "binary", "uid": 0, "exists": true, "attr_flags": "", "woth": true, "isreg": false, "device_type": 0, "mtime": 1571928916.5559893, "block_size": 4096, "inode": 107, "isgid": false, "size": 4096, "executable": true, "isuid": false, "readable": true, "version": "18446744073700939340", "pw_name": "root", "gid": 0, "ischr": false, "wusr": true, "writeable": true, "mimetype": "inode/directory", "blocks": 8, "xoth": true, "islnk": false, "nlink": 13, "issock": false, "rgrp": true, "gr_name": "root", "path": "/tmp", "xusr": true, "atime": 1571834961.8623462, "isdir": true, "ctime": 1571928916.5559893, "isblk": false, "wgrp": true, "xgrp": true, "dev": 2049, "roth": true, "isfifo": false, "mode": "1777", "rusr": true, "attributes": []}, "changed": false}\r\n', 'Shared connection to 34.68.236.1 closed.\r\n')
+2019-10-24 14:55:16,645 p=4916 u=umesh |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/files/stat.py
+2019-10-24 14:55:16,646 p=4916 u=umesh |  <34.68.236.1> PUT /home/umesh/.ansible/tmp/ansible-local-4916yZRyjk/tmpLTLlWT TO /home/umesh/.ansible/tmp/ansible-tmp-1571928916.13-10510903766409/AnsiballZ_stat.py
+2019-10-24 14:55:16,647 p=4916 u=umesh |  <34.68.236.1> SSH: EXEC sftp -b - -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o ConnectTimeout=10 -o ControlPath=/home/umesh/.ansible/cp/355f305444 '[34.68.236.1]'
+2019-10-24 14:55:16,701 p=4916 u=umesh |  <34.68.236.1> (0, 'sftp> put /home/umesh/.ansible/tmp/ansible-local-4916yZRyjk/tmpLTLlWT /home/umesh/.ansible/tmp/ansible-tmp-1571928916.13-10510903766409/AnsiballZ_stat.py\n', '')
+2019-10-24 14:55:16,702 p=4916 u=umesh |  <34.68.236.1> ESTABLISH SSH CONNECTION FOR USER: None
+2019-10-24 14:55:16,703 p=4916 u=umesh |  <34.68.236.1> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o ConnectTimeout=10 -o ControlPath=/home/umesh/.ansible/cp/355f305444 34.68.236.1 '/bin/sh -c '"'"'chmod u+x /home/umesh/.ansible/tmp/ansible-tmp-1571928916.13-10510903766409/ /home/umesh/.ansible/tmp/ansible-tmp-1571928916.13-10510903766409/AnsiballZ_stat.py && sleep 0'"'"''
+2019-10-24 14:55:16,735 p=4916 u=umesh |  <34.68.236.1> (0, '', '')
+2019-10-24 14:55:16,736 p=4916 u=umesh |  <34.68.236.1> ESTABLISH SSH CONNECTION FOR USER: None
+2019-10-24 14:55:16,737 p=4916 u=umesh |  <34.68.236.1> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o ConnectTimeout=10 -o ControlPath=/home/umesh/.ansible/cp/355f305444 -tt 34.68.236.1 '/bin/sh -c '"'"'sudo -H -S -n  -u root /bin/sh -c '"'"'"'"'"'"'"'"'echo BECOME-SUCCESS-frekmfdtojrfcaojvlwdebmdedrlsoep ; /usr/bin/python /home/umesh/.ansible/tmp/ansible-tmp-1571928916.13-10510903766409/AnsiballZ_stat.py'"'"'"'"'"'"'"'"' && sleep 0'"'"''
+2019-10-24 14:55:16,793 p=4916 u=umesh |  Escalation succeeded
+2019-10-24 14:55:16,910 p=4916 u=umesh |  <34.68.236.1> (0, '\r\n{"invocation": {"module_args": {"checksum_algorithm": "sha1", "get_checksum": true, "follow": false, "path": "/tmp/test.txt", "get_md5": null, "get_mime": true, "get_attributes": true}}, "stat": {"charset": "us-ascii", "uid": 1000, "exists": true, "attr_flags": "", "woth": false, "isreg": true, "device_type": 0, "mtime": 1571834955.757831, "block_size": 4096, "inode": 347074, "isgid": false, "size": 21, "executable": false, "isuid": false, "readable": true, "version": "18446744073629168962", "pw_name": "umesh", "gid": 1001, "ischr": false, "wusr": true, "writeable": true, "mimetype": "text/plain", "blocks": 8, "xoth": false, "islnk": false, "nlink": 1, "issock": false, "rgrp": true, "gr_name": "umesh", "path": "/tmp/test.txt", "xusr": false, "atime": 1571927740.5561993, "isdir": false, "ctime": 1571834956.170866, "isblk": false, "wgrp": false, "checksum": "aab7b1503aa6e03622b3f5e4db7658821805321c", "dev": 2049, "roth": true, "isfifo": false, "mode": "0644", "xgrp": false, "rusr": true, "attributes": []}, "changed": false}\r\n', 'Shared connection to 34.68.236.1 closed.\r\n')
+2019-10-24 14:55:17,066 p=4916 u=umesh |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/files/file.py
+2019-10-24 14:55:17,066 p=4916 u=umesh |  <34.68.236.1> PUT /home/umesh/.ansible/tmp/ansible-local-4916yZRyjk/tmpAN8xMV TO /home/umesh/.ansible/tmp/ansible-tmp-1571928916.13-10510903766409/AnsiballZ_file.py
+2019-10-24 14:55:17,067 p=4916 u=umesh |  <34.68.236.1> SSH: EXEC sftp -b - -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o ConnectTimeout=10 -o ControlPath=/home/umesh/.ansible/cp/355f305444 '[34.68.236.1]'
+2019-10-24 14:55:17,123 p=4916 u=umesh |  <34.68.236.1> (0, 'sftp> put /home/umesh/.ansible/tmp/ansible-local-4916yZRyjk/tmpAN8xMV /home/umesh/.ansible/tmp/ansible-tmp-1571928916.13-10510903766409/AnsiballZ_file.py\n', '')
+2019-10-24 14:55:17,123 p=4916 u=umesh |  <34.68.236.1> ESTABLISH SSH CONNECTION FOR USER: None
+2019-10-24 14:55:17,124 p=4916 u=umesh |  <34.68.236.1> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o ConnectTimeout=10 -o ControlPath=/home/umesh/.ansible/cp/355f305444 34.68.236.1 '/bin/sh -c '"'"'chmod u+x /home/umesh/.ansible/tmp/ansible-tmp-1571928916.13-10510903766409/ /home/umesh/.ansible/tmp/ansible-tmp-1571928916.13-10510903766409/AnsiballZ_file.py && sleep 0'"'"''
+2019-10-24 14:55:17,157 p=4916 u=umesh |  <34.68.236.1> (0, '', '')
+2019-10-24 14:55:17,158 p=4916 u=umesh |  <34.68.236.1> ESTABLISH SSH CONNECTION FOR USER: None
+2019-10-24 14:55:17,158 p=4916 u=umesh |  <34.68.236.1> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o ConnectTimeout=10 -o ControlPath=/home/umesh/.ansible/cp/355f305444 -tt 34.68.236.1 '/bin/sh -c '"'"'sudo -H -S -n  -u root /bin/sh -c '"'"'"'"'"'"'"'"'echo BECOME-SUCCESS-azefabjwhttgtktetfdmuklhbkcpdetw ; /usr/bin/python /home/umesh/.ansible/tmp/ansible-tmp-1571928916.13-10510903766409/AnsiballZ_file.py'"'"'"'"'"'"'"'"' && sleep 0'"'"''
+2019-10-24 14:55:17,220 p=4916 u=umesh |  Escalation succeeded
+2019-10-24 14:55:17,333 p=4916 u=umesh |  <34.68.236.1> (0, '\r\n{"group": "umesh", "uid": 1000, "changed": false, "owner": "umesh", "state": "file", "gid": 1001, "secontext": "unconfined_u:object_r:user_home_t:s0", "mode": "0644", "path": "/tmp/test.txt", "invocation": {"module_args": {"directory_mode": null, "force": false, "remote_src": null, "_original_basename": "test.txt", "path": "/tmp/test.txt", "owner": "umesh", "follow": true, "group": "umesh", "unsafe_writes": null, "state": "file", "content": null, "serole": null, "access_time": null, "setype": null, "dest": "/tmp", "selevel": null, "access_time_format": "%Y%m%d%H%M.%S", "modification_time": null, "regexp": null, "src": null, "seuser": null, "recurse": false, "_diff_peek": null, "delimiter": null, "mode": 420, "modification_time_format": "%Y%m%d%H%M.%S", "attributes": null, "backup": null}}, "diff": {"after": {"path": "/tmp/test.txt"}, "before": {"path": "/tmp/test.txt"}}, "size": 21}\r\n', 'Shared connection to 34.68.236.1 closed.\r\n')
+2019-10-24 14:55:17,334 p=4916 u=umesh |  <34.68.236.1> ESTABLISH SSH CONNECTION FOR USER: None
+2019-10-24 14:55:17,335 p=4916 u=umesh |  <34.68.236.1> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o ConnectTimeout=10 -o ControlPath=/home/umesh/.ansible/cp/355f305444 34.68.236.1 '/bin/sh -c '"'"'rm -f -r /home/umesh/.ansible/tmp/ansible-tmp-1571928916.13-10510903766409/ > /dev/null 2>&1 && sleep 0'"'"''
+2019-10-24 14:55:17,370 p=4916 u=umesh |  <34.68.236.1> (0, '', '')
+2019-10-24 14:55:17,377 p=4916 u=umesh |  ok: [34.68.236.1] => {
+    "changed": false, 
+    "checksum": "aab7b1503aa6e03622b3f5e4db7658821805321c", 
+    "dest": "/tmp/test.txt", 
+    "diff": {
+        "after": {
+            "path": "/tmp/test.txt"
+        }, 
+        "before": {
+            "path": "/tmp/test.txt"
+        }
+    }, 
+    "gid": 1001, 
+    "group": "umesh", 
+    "invocation": {
+        "module_args": {
+            "_diff_peek": null, 
+            "_original_basename": "test.txt", 
+            "access_time": null, 
+            "access_time_format": "%Y%m%d%H%M.%S", 
+            "attributes": null, 
+            "backup": null, 
+            "content": null, 
+            "delimiter": null, 
+            "dest": "/tmp", 
+            "directory_mode": null, 
+            "follow": true, 
+            "force": false, 
+            "group": "umesh", 
+            "mode": 420, 
+            "modification_time": null, 
+            "modification_time_format": "%Y%m%d%H%M.%S", 
+            "owner": "umesh", 
+            "path": "/tmp/test.txt", 
+            "recurse": false, 
+            "regexp": null, 
+            "remote_src": null, 
+            "selevel": null, 
+            "serole": null, 
+            "setype": null, 
+            "seuser": null, 
+            "src": null, 
+            "state": "file", 
+            "unsafe_writes": null
+        }
+    }, 
+    "mode": "0644", 
+    "owner": "umesh", 
+    "path": "/tmp/test.txt", 
+    "secontext": "unconfined_u:object_r:user_home_t:s0", 
+    "size": 21, 
+    "state": "file", 
+    "uid": 1000
+}
+2019-10-24 14:55:17,377 p=4916 u=umesh |  META: ran handlers
+2019-10-24 14:55:17,378 p=4916 u=umesh |  META: ran handlers
+2019-10-24 14:55:17,379 p=4916 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-24 14:55:17,379 p=4916 u=umesh |  34.68.236.1                : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-10-24 14:59:07,774 p=4982 u=umesh |  playbook: playbook.yml
+2019-10-24 14:59:36,211 p=5006 u=umesh |  ERROR! Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/home/umesh/playbook.yml': line 9, column 12, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    -name : Copies files to remote locations
+      copy :
+           ^ here
+
+2019-10-24 15:04:42,517 p=5156 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-24 15:04:42,526 p=5156 u=umesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-10-24 15:04:44,082 p=5156 u=umesh |  ok: [34.68.236.1]
+2019-10-24 15:04:44,101 p=5156 u=umesh |  TASK [Copies files to remote locations] ********************************************************************************************************************************
+2019-10-24 15:04:45,381 p=5156 u=umesh |  ok: [34.68.236.1]
+2019-10-24 15:04:45,383 p=5156 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-24 15:04:45,383 p=5156 u=umesh |  34.68.236.1                : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-10-24 15:06:59,458 p=5257 u=umesh |  PLAY [test] ********************************************************************
+2019-10-24 15:06:59,467 p=5257 u=umesh |  TASK [Gathering Facts] *********************************************************
+2019-10-24 15:07:01,018 p=5257 u=umesh |  ok: [34.68.236.1]
+2019-10-24 15:07:01,036 p=5257 u=umesh |  TASK [Copies files to remote locations] ****************************************
+2019-10-24 15:07:01,861 p=5257 u=umesh |  changed: [34.68.236.1]
+2019-10-24 15:07:01,863 p=5257 u=umesh |  PLAY RECAP *********************************************************************
+2019-10-24 15:07:01,864 p=5257 u=umesh |  34.68.236.1                : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-10-25 14:02:17,909 p=22989 u=umesh |  - hostnames was created successfully
+2019-10-25 14:16:51,358 p=23187 u=umesh |  ERROR! The tasks/main.yml file for role 'hostcopyrole' must contain a list of tasks
+
+The error appears to be in '/home/umesh/roles/hostcopyrole/tasks/main.yml': line 4, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+-name: update /etc/hosts
+^ here
+
+2019-10-25 14:22:14,017 p=23258 u=umesh |  ERROR! The tasks/main.yml file for role 'hostcopyrole' must contain a list of tasks
+
+The error appears to be in '/home/umesh/roles/hostcopyrole/tasks/main.yml': line 4, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+-name: update /etc/hosts
+^ here
+
+2019-10-25 14:24:25,260 p=23340 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-25 14:24:25,270 p=23340 u=umesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-10-25 14:24:26,870 p=23340 u=umesh |  ok: [34.68.236.1]
+2019-10-25 14:24:26,889 p=23340 u=umesh |  TASK [hostcopyrole : update /etc/hosts] ********************************************************************************************************************************
+2019-10-25 14:24:28,031 p=23340 u=umesh |  changed: [34.68.236.1]
+2019-10-25 14:24:28,033 p=23340 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-25 14:24:28,033 p=23340 u=umesh |  34.68.236.1                : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-10-25 14:45:27,020 p=23616 u=umesh |  PLAY [test] ************************************************************************************************************************************************************
+2019-10-25 14:45:27,030 p=23616 u=umesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-10-25 14:45:28,597 p=23616 u=umesh |  ok: [34.68.236.1]
+2019-10-25 14:45:28,616 p=23616 u=umesh |  TASK [hostcopyrole : update /etc/hosts] ********************************************************************************************************************************
+2019-10-25 14:45:29,751 p=23616 u=umesh |  changed: [34.68.236.1]
+2019-10-25 14:45:29,754 p=23616 u=umesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-10-25 14:45:29,754 p=23616 u=umesh |  34.68.236.1                : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

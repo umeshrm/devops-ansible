@@ -1,0 +1,17 @@
+---
+  - hosts: test
+  - user: root
+    gather_facts: no
+
+    tasks:
+     - name: check the services
+       service:
+         name: "{{items}}"
+         state: absent
+
+       with_items:
+                 - httpd
+                 - apr
+                 - http-devel
+                 - apr-util
+ 

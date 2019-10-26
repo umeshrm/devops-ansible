@@ -1,0 +1,10 @@
+---
+# tasks file for hostcopyrole
+
+- name: update /etc/hosts
+  copy:
+    src: '{{ srcfilename }}'
+    dest: '{{ destfilename }}'
+    owner: root
+    group: root
+    mode: 0664 

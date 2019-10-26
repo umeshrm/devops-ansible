@@ -1,0 +1,16 @@
+---
+- hosts: test
+  become_method: yes
+  gather_facts: no
+  tasks:
+   - name: validating ignore errors
+     yum:
+       name: httpdss
+       state: present
+     ignore_errors: yes
+
+   - name: validating ignore errors
+     yum:
+       name: httpd
+       state: present
+     ignore_errors: yes

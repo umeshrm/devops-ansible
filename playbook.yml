@@ -1,0 +1,14 @@
+---
+- hosts: test
+  become: yes
+  become_method: sudo
+
+  tasks :
+
+    - name : Copies files to remote locations
+      copy :
+        src: /home/umesh/test.txt
+        dest: /tmp
+        owner: umesh
+        group: umesh
+        mode: 0644

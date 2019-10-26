@@ -1,0 +1,9 @@
+---
+ - hosts: test
+   become: yes
+   become_method: sudo
+   vars_files:
+     - /home/umesh/roles/hostcopyrole/vars/main.yml
+
+   roles:
+     - hostcopyrole

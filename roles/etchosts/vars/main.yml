@@ -1,0 +1,4 @@
+---
+# vars file for roles/etchost
+srcfilename: '/home/umesh/roles/etchosts/files/etchosts'
+destfilename: '/etc/hosts'

@@ -1,0 +1,10 @@
+---
+# tasks file for roles/etchost
+
+- name: update host file
+  copy:
+    src: '{{srcfilename}}'
+    dest: '{{destfilename}}'
+    owner: root
+    group: root
+    mode: 0644

@@ -1,0 +1,4 @@
+---
+# vars file for hostcopyrole
+srcfilename: '/home/umesh/roles/hostcopyrole/files/etc-host-copyfile'
+destfilename: '/etc/hosts'

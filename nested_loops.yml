@@ -1,0 +1,15 @@
+---
+  - hosts: localhost
+    become_method: yes
+    gather_facts: no
+
+    tasks:
+    - name: nested loops
+      user:
+        name: "{{ item [0] }}"
+        state: present
+      groups: "{{ item [1] }}"
+
+    with_nested:
+        - [ "testuser001" , "testuser002" ]
+        - [ "deploy" , "deploy" ]
